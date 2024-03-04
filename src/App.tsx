@@ -18,20 +18,6 @@ const TeamCard: React.FC<TeamProps> = (props) => (
   </div>
 );
 
-// class Team extends React.Component<TeamProps> {
-//   render() {
-//     const oneTeam = this.props;
-//     return (
-//       <div>
-//         <h1>{oneTeam.school}</h1>
-//         <h3>
-//           The {oneTeam.name} from {oneTeam.city}, {oneTeam.state}
-//         </h3>
-//       </div>
-//     );
-//   }
-// }
-
 function TeamList() {
   return (
     <div className="team-grid">
