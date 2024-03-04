@@ -15,13 +15,31 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 150px;
   display: flex;
+  padding: 20px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.team-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.team-card h2 {
+  margin-bottom: 5px;
 }
 
 .App-link {
