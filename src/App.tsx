@@ -42,8 +42,9 @@ function TeamList() {
   return (
     <div>
       <h1>List of teams in the team CollegeBasketballTeams.json file</h1>
-      <Team {...NCAAteams[0]} />
-      <Team {...NCAAteams[1]} />
+      {NCAAteams.map((singleTeam) => (
+        <Team {...singleTeam} />
+      ))}
     </div>
   );
 }
